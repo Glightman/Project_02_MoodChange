@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mood Change</title>
+</head>
+<body>
+    <div class="conteúdo">
+        {% if award %}
+            <div class="bloco">
+                <h1>{{name_player}}</h1>
+                <img src="https://i.pinimg.com/originals/0d/df/34/0ddf345df79b2e87890a54ab38021247.jpg" alt="aqui teria uma imagem" width="400">
+                <h2>ALEGRIA</h2>
+            </div>
+
+        {% else %}
+            <div class="bloco">
+                <h1>{{name_player}}</h1>
+                <img src="https://www.rrstar.com/storyimage/IR/20090616/NEWS/306169886/H4/0/H4-306169886.jpg" alt="aqui teria uma imagem" width="400">
+                <h2>RAIVA</h2>
+            </div>
+        {% endif %}
+</body>
+</html>
